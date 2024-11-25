@@ -8,7 +8,9 @@ const SearchBar = () => {
       <div className={styles['searchbar__btns-wrapper']}>
         <button className={styles.searchbar__btn}>Anywhere</button>
         <button className={styles.searchbar__btn}>Any week</button>
-        <button className={styles.searchbar__btn}>Add guests</button>
+        <button className={`${styles['searchbar__btn']} ${styles['disabled']}`}>
+            Add guests
+        </button>
       </div>
       <button className={styles['searchbar__btn-search']}>
         <img src={searchIcon} alt="Search" />

@@ -1,5 +1,7 @@
 .searchbar {
     height: 48px;
+    padding: 8px;
+
     display: flex;
     align-items: center;
 
@@ -17,6 +19,14 @@
     &__btn {
         padding: 0 20px;
         height: 24px;
+
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 157%;
+        color: #222;
+    }
+    &__btn:hover {
+        text-decoration: underline;
     }
     &__btn:not(:last-child) {
         border-right: 1px solid #DDDDDD;
@@ -31,5 +41,13 @@
         background-color: var(--accent);
         display: inline-block;
         border-radius: 50%;
+
+        transition: backgroundColor .3s ease;
     }
+    &__btn-search:hover {
+        background-color: var(--grey);
+    }
+}
+.disabled {
+     color: var(--grey);
 }
