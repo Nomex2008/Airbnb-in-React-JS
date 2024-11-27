@@ -1,0 +1,30 @@
+.userMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*&__home {
+    }
+    &__local {
+    }
+    &__user {
+    }*/
+
+}
+.account {
+    display: flex;
+    align-items: center;
+    padding: 6px 6px 6px 13px;
+    gap: 10px;
+    border-radius: 21px;
+    border: 1px solid #DDD;
+    background: #fff;
+    width: 77px;
+    height: 42px;
+
+    &__navIcon {
+        display: flex;
+        align-items: center;
+    }
+    &__avatar {
+    }
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../Logo/Logo'
 import SearchBar from '../SearchBar/SearchBar'
+import UserMenu from '../UserMenu/UserMenu'
 import styles from './styles.module.scss'
 
 const Header = () => {
@@ -10,7 +11,7 @@ const Header = () => {
             <div className={styles.header__row}>
                 <div className={styles.header__logo}><Logo/></div>
                 <div className={styles.header__search}><SearchBar/></div>
-                <div className={styles.header__user}>user menu</div>
+                <div className={styles.header__user}><UserMenu/></div>
             </div>
         </div>
     </div>
