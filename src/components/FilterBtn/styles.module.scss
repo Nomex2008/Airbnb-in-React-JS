@@ -1,0 +1,15 @@
+.filterBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 16px;
+
+    transition: opacity .3s ease;
+
+    &:hover {
+        opacity: .7;
+    }
+}
