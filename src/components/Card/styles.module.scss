@@ -1,0 +1,57 @@
+.card {
+
+}
+.img {
+
+}
+.descWrapper {
+
+}
+.titleWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+.title {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 127%;
+    color: #222;
+    font-family: var(--font-family);
+}
+.rating {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 127%;
+    color: #222;
+    text-align: right;
+    font-family: var(--font-family);
+}
+.desc {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 127%;
+    color: #717171;
+    font-family: var(--font-family);
+}
+.data {
+    padding: 0 234px 0 0;
+    width: 302px;
+    height: 19px;
+}
+.price {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 127%;
+    color: #222;
+    font-family: var(--font-family);
+
+    strong {
+        font-weight: 600;
+    }
+}

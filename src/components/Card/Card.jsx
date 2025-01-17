@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles.module.scss'
+import starIcon from './star.svg'
 
 const Card = () => {
   return (
@@ -9,9 +10,13 @@ const Card = () => {
         className={styles.img}/>
 
         <div className={styles.descWrapper}>
+
             <div className={styles.titleWrapper}>
                 <h3 className={styles.title}>Title</h3>
-                <div className={styles.rating}>Rating</div>
+                <div className={styles.rating}>
+                  <img src={starIcon} alt="" />
+                  5.0
+                </div>
             </div>
 
             <p className={styles.desc}>Desc</p>
@@ -19,6 +24,7 @@ const Card = () => {
             <p className={styles.data}>Data</p>
 
             <p className={styles.price}>PRICE</p>
+            
         </div>
     </article>
   )
