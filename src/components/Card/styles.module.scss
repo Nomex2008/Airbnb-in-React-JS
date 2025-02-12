@@ -1,11 +1,19 @@
 .card {
-
+    max-width: 400px;
 }
 .img {
+    margin-bottom: 12px;
+    border-radius: 12px;
+
+    width: 100%;
+    aspect-ratio: 302 / 286;
+    object-fit: cover;
 
 }
 .descWrapper {
-
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 .titleWrapper {
     display: flex;
@@ -18,7 +26,6 @@
     font-size: 15px;
     line-height: 127%;
     color: #222;
-    font-family: var(--font-family);
 }
 .rating {
     display: flex;
@@ -30,21 +37,21 @@
     line-height: 127%;
     color: #222;
     text-align: right;
-    font-family: var(--font-family);
 }
 .desc {
     font-weight: 400;
     font-size: 15px;
     line-height: 127%;
     color: #717171;
-    font-family: var(--font-family);
 }
 .data {
-    padding: 0 234px 0 0;
-    width: 302px;
-    height: 19px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 146%;
+    color: #717171;
 }
 .price {
+    margin-top: auto;
     font-weight: 400;
     font-size: 15px;
     line-height: 127%;

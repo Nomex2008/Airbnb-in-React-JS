@@ -23,7 +23,9 @@ const Card = () => {
 
             <p className={styles.data}>Data</p>
 
-            <p className={styles.price}>PRICE</p>
+            <p className={styles.price}>
+              <strong>$388</strong> night
+            </p>
             
         </div>
     </article>
