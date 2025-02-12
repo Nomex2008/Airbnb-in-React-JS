@@ -2,29 +2,33 @@ import React from 'react'
 import styles from './styles.module.scss'
 import starIcon from './star.svg'
 
-const Card = () => {
+const Card = ({data}) => {
+  //console.log(data)
+
+  const {location, desc, rating, price_per_night, dates_available, img, img2x} = data
+  
   return (
     <article className={styles.card}>
-        <img src="./img/objects/01.jpg" srcSet='./img/objects/01@2x.jpg 2x' 
-        alt="" 
+        <img src={`./img/objects/${img}`} srcSet={`./img/objects/${img2x} 2x`}
+        alt={location}
         className={styles.img}/>
 
         <div className={styles.descWrapper}>
 
             <div className={styles.titleWrapper}>
-                <h3 className={styles.title}>Title</h3>
+                <h3 className={styles.title}>{location}</h3>
                 <div className={styles.rating}>
                   <img src={starIcon} alt="" />
-                  5.0
+                  {rating}
                 </div>
             </div>
 
-            <p className={styles.desc}>Desc</p>
+            <p className={styles.desc}>{desc}</p>
 
-            <p className={styles.data}>Data</p>
+            <p className={styles.data}>{dates_available}</p>
 
             <p className={styles.price}>
-              <strong>$388</strong> night
+              <strong>${price_per_night}</strong> night
             </p>
             
         </div>

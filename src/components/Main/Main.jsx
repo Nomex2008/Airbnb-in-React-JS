@@ -4,12 +4,15 @@ import styles from './styles.module.scss'
 import cardsData from '../../data/data.json'
 
 const Main = () => {
-  console.log(cardsData)
+  //console.log(cardsData)
+
   return (
     <main className={styles.main}>
       <div className="container">
         <div className={styles.main__cards}>
-          <Card/>
+          {cardsData.map((item, index) => {
+            return <Card data={item} key={index}/>
+          })}
         </div>
       </div>
     </main>
