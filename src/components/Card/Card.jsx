@@ -9,6 +9,7 @@ const Card = ({data}) => {
   
   return (
     <article className={styles.card}>
+      <a href="#" className={styles.card__link}></a>
         <img src={`./img/objects/${img}`} srcSet={`./img/objects/${img2x} 2x`}
         alt={location}
         className={styles.img}/>
