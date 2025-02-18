@@ -1,0 +1,20 @@
+.footer {
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    &__right , &__left {
+        display: flex;
+        column-gap: 24px;
+    }
+    &__left {
+    }
+    &__right {
+    }
+}
+.leftItem {
+}
+.rightItem {
+}
