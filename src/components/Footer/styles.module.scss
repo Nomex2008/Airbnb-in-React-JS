@@ -15,6 +15,19 @@
     }
 }
 .leftItem {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    color: #222;
 }
 .rightItem {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    text-align: center;
+    color: #222;
+
+    &__mar{
+        margin-right: 8px;
+    }
 }

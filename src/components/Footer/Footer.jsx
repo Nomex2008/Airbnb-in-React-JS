@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from './styles.module.scss'
+import arrowTop from '/img/icons/arrow-top.svg'
+import globeBlack from '/img/icons/globe-black.svg'
 
 const Footer = () => {
   return (
@@ -17,12 +19,12 @@ const Footer = () => {
 
           <ul className={styles.footer__right}>
             <li className={styles.rightItem}>
-              
+              <img className={styles.rightItem__mar} src={globeBlack} alt="" />
               English (US)</li>
-            <li className={styles.rightItem}>USD</li>
+            <li className={styles.rightItem}><span className={styles.rightItem__mar}>$</span>USD</li>
             <li className={styles.rightItem}>Support & resources</li>
             <li className={styles.rightItem}>
-
+              <img src={arrowTop} alt="" />
             </li>
           </ul>
 
